@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aadhaar-OCR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="banner">Document-OCR</h1>
+    </header>
+    <div class="mainwork">
+      <div class="upload-buttons">
+        <div><p>Upload Aadhaar Card</p></div>
+        <div>
+          <div>
+            <p>Front Image:</p>
+            <input type="file" id="FrontImage" accept="image/*" />
+            <button class="upload-button" onclick="uploadFile()">Upload</button>
+          </div>
+          <div>
+            <p>Back Image:</p>
+            <input type="file" id="file" accept="image/*" />
+            <button class="upload-button" onclick="uploadFile()">Upload</button>
+          </div>
+        </div>
+        <div class="extracted_info">
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" /><br /><br />
+            <label for="dob">Date of Birth:</label>
+            <input type="text" id="dob" name="dob" /><br /><br />
+            <label for="aadhaar">Aadhaar Number:</label>
+            <input type="text" id="aadhaar" name="aadhaar" /><br /><br />
+            <label for="sex">Gender</label>
+            <input type="text" id="sex" name="sex" /><br /><br />
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" /><br /><br />
+            <label fpr="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" /><br /><br />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
